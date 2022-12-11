@@ -60,9 +60,9 @@ const UserOptions = ({ user }) => {
   }
   function logoutUser() {
       dispatch(logout());
-      
-      alert.success("Logout Successfully");
-      history.push("/login")
+       history.push("/login");
+       alert.success("Logout Successfully");
+     
   }
 
   return (

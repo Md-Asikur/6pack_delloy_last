@@ -59,7 +59,7 @@ const MyOrders = () => {
       renderCell: (params) => {
         return (
           <Link
-            to={`/https://ecommerce6pack.netlify.app/order/${params.getValue(
+            to={`/order/${params.getValue(
               params.id,
               "id"
             )}`}
