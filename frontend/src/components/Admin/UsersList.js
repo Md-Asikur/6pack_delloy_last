@@ -45,7 +45,7 @@ const UsersList = ({ history }) => {
 
     if (isDeleted) {
       alert.success(message);
-      history.push("/admin/users");
+      history.push("https://asikurrahaman-ecom.onrender.com/admin/users");
       dispatch({ type: DELETE_USER_RESET });
     }
 
@@ -100,14 +100,24 @@ const UsersList = ({ history }) => {
       renderCell: (params) => {
         return (
           <Fragment>
-            <Link to={`/admin/user/${params.getValue(params.id, "id")}`}>
+            <Link
+              to={`https://asikurrahaman-ecom.onrender.com/admin/user/${params.getValue(
+                params.id,
+                "id"
+              )}`}
+            >
               <EditIcon />
             </Link>
 
             <Button onClick={() => deleteUserHandler(params.getValue(params.id, "id"))}>
               <DeleteIcon />
             </Button>
-            <Link to={`/account/${params.getValue(params.id, "id")}`}>
+            <Link
+              to={`https://asikurrahaman-ecom.onrender.com/account/${params.getValue(
+                params.id,
+                "id"
+              )}`}
+            >
               <LaunchIcon />
             </Link>
           </Fragment>

@@ -46,7 +46,7 @@ const ProductList = ({ history }) => {
 
     if (isDeleted) {
       alert.success("Product Deleted Successfully");
-      history.push("/admin/dashboard");
+      history.push("https://asikurrahaman-ecom.onrender.com/admin/dashboard");
       dispatch({ type: DELETE_PRODUCT_RESET });
     }
 
@@ -88,7 +88,12 @@ const ProductList = ({ history }) => {
       renderCell: (params) => {
         return (
           <Fragment>
-            <Link to={`/admin/product/${params.getValue(params.id, "id")}`}>
+            <Link
+              to={`https://asikurrahaman-ecom.onrender.com/admin/product/${params.getValue(
+                params.id,
+                "id"
+              )}`}
+            >
               <EditIcon />
             </Link>
 
@@ -97,7 +102,12 @@ const ProductList = ({ history }) => {
             >
               <DeleteIcon />
             </Button>
-            <Link to={`/product/${params.getValue(params.id, "id")}`}>
+            <Link
+              to={`https://asikurrahaman-ecom.onrender.com/product/${params.getValue(
+                params.id,
+                "id"
+              )}`}
+            >
               <LaunchIcon />
             </Link>
           </Fragment>

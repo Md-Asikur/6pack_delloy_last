@@ -73,7 +73,7 @@ const params=useParams()
 
     if (isUpdated) {
       alert.success("Product Updated Successfully");
-      history.push("/admin/products");
+      history.push("https://asikurrahaman-ecom.onrender.com/admin/products");
       dispatch({ type: UPDATE_PRODUCT_RESET });
     }
   }, [

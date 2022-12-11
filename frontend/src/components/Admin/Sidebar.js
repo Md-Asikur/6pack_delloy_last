@@ -18,7 +18,7 @@ const Sidebar = () => {
       <Link to="/">
         <img src={logo} alt="Ecommerce" />
       </Link>
-      <Link to="/admin/dashboard">
+      <Link to="https://asikurrahaman-ecom.onrender.com/admin/dashboard">
         <p>
           <DashboardIcon /> Dashboard
         </p>
@@ -29,28 +29,28 @@ const Sidebar = () => {
           defaultExpandIcon={<ImportExportIcon />}
         >
           <TreeItem nodeId="1" label="Products">
-            <Link to="/admin/products">
+            <Link to="https://asikurrahaman-ecom.onrender.com/admin/products">
               <TreeItem nodeId="2" label="All" icon={<PostAddIcon />} />
             </Link>
 
-            <Link to="/admin/product">
+            <Link to="https://asikurrahaman-ecom.onrender.com/admin/product">
               <TreeItem nodeId="3" label="Create" icon={<AddIcon />} />
             </Link>
           </TreeItem>
         </TreeView>
       </Link>
-      <Link to="/admin/orders">
+      <Link to="https://asikurrahaman-ecom.onrender.com/admin/orders">
         <p>
           <ListAltIcon />
           Orders
         </p>
       </Link>
-      <Link to="/admin/users">
+      <Link to="https://asikurrahaman-ecom.onrender.com/admin/users">
         <p>
           <PeopleIcon /> Users
         </p>
       </Link>
-      <Link to="/admin/reviews">
+      <Link to="https://asikurrahaman-ecom.onrender.com/admin/reviews">
         <p>
           <RateReviewIcon />
           Reviews
