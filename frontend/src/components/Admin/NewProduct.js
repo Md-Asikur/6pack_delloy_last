@@ -45,7 +45,7 @@ const NewProduct = ({ history }) => {
 
     if (success) {
       alert.success("Product Created Successfully");
-      history.push("https://ecommerce6pack.netlify.app/admin/dashboard");
+      history.push("/admin/dashboard");
       dispatch({ type: NEW_PRODUCT_RESET });
     }
   }, [dispatch, alert, error, history, success]);

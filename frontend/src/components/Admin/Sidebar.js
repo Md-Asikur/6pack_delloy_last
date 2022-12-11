@@ -18,7 +18,7 @@ const Sidebar = () => {
       <Link to="/">
         <img src={logo} alt="Ecommerce" />
       </Link>
-      <Link to="https://ecommerce6pack.netlify.app/admin/dashboard">
+      <Link to="/admin/dashboard">
         <p>
           <DashboardIcon /> Dashboard
         </p>
@@ -29,28 +29,28 @@ const Sidebar = () => {
           defaultExpandIcon={<ImportExportIcon />}
         >
           <TreeItem nodeId="1" label="Products">
-            <Link to="https://ecommerce6pack.netlify.app/admin/products">
+            <Link to="/admin/products">
               <TreeItem nodeId="2" label="All" icon={<PostAddIcon />} />
             </Link>
 
-            <Link to="https://ecommerce6pack.netlify.app/admin/product">
+            <Link to="/admin/product">
               <TreeItem nodeId="3" label="Create" icon={<AddIcon />} />
             </Link>
           </TreeItem>
         </TreeView>
       </Link>
-      <Link to="https://ecommerce6pack.netlify.app/admin/orders">
+      <Link to="/admin/orders">
         <p>
           <ListAltIcon />
           Orders
         </p>
       </Link>
-      <Link to="https://ecommerce6pack.netlify.app/admin/users">
+      <Link to="/admin/users">
         <p>
           <PeopleIcon /> Users
         </p>
       </Link>
-      <Link to="https://ecommerce6pack.netlify.app/admin/reviews">
+      <Link to="/admin/reviews">
         <p>
           <RateReviewIcon />
           Reviews

@@ -43,7 +43,7 @@ const OrderList = ({ history }) => {
 
     if (isDeleted) {
       alert.success("Order Deleted Successfully");
-      history.push("https://ecommerce6pack.netlify.app/admin/orders");
+      history.push("/https://ecommerce6pack.netlify.app/admin/orders");
       dispatch({ type: DELETE_ORDER_RESET });
     }
 
@@ -91,7 +91,7 @@ const OrderList = ({ history }) => {
         return (
           <Fragment>
             <Link
-              to={`https://ecommerce6pack.netlify.app/admin/order/${params.getValue(
+              to={`/https://ecommerce6pack.netlify.app/admin/order/${params.getValue(
                 params.id,
                 "id"
               )}`}
@@ -103,7 +103,7 @@ const OrderList = ({ history }) => {
               <DeleteIcon />
             </Button>
             <Link
-              to={`https://ecommerce6pack.netlify.app/order/${params.getValue(
+              to={`/https://ecommerce6pack.netlify.app/order/${params.getValue(
                 params.id,
                 "id"
               )}`}

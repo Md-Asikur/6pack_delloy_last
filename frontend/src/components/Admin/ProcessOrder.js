@@ -77,7 +77,9 @@ const params=useParams()
                     </div>
                     <div>
                       <p>Phone:</p>
-                      <span>{order.shippingInfo && order.shippingInfo.phoneNo}</span>
+                      <span>
+                        {order.shippingInfo && order.shippingInfo.phoneNo}
+                      </span>
                     </div>
                     <div>
                       <p>Address:</p>
@@ -93,12 +95,14 @@ const params=useParams()
                     <div>
                       <p
                         className={
-                          order.paymentInfo && order.paymentInfo.status === "succeeded"
+                          order.paymentInfo &&
+                          order.paymentInfo.status === "succeeded"
                             ? "greenColor"
                             : "redColor"
                         }
                       >
-                        {order.paymentInfo && order.paymentInfo.status === "succeeded"
+                        {order.paymentInfo &&
+                        order.paymentInfo.status === "succeeded"
                           ? "PAID"
                           : "NOT PAID"}
                       </p>
@@ -132,9 +136,7 @@ const params=useParams()
                       order.orderItems.map((item) => (
                         <div key={item.product}>
                           <img src={item.image} alt="Product" />
-                          <Link
-                            to={`https://ecommerce6pack.netlify.app/product/${item.product}`}
-                          >
+                          <Link to={`/product/${item.product}`}>
                             {item.name}
                           </Link>{" "}
                           <span>
@@ -152,7 +154,10 @@ const params=useParams()
                   display: order.orderStatus === "Delivered" ? "none" : "block",
                 }}
               >
-                <form className="updateOrderForm" onSubmit={updateOrderSubmitHandler}>
+                <form
+                  className="updateOrderForm"
+                  onSubmit={updateOrderSubmitHandler}
+                >
                   <h1>Process Order</h1>
 
                   <div>
@@ -172,7 +177,9 @@ const params=useParams()
                   <Button
                     id="createProductBtn"
                     type="submit"
-                    disabled={loading ? true : false || status === "" ? true : false}
+                    disabled={
+                      loading ? true : false || status === "" ? true : false
+                    }
                   >
                     Process
                   </Button>
