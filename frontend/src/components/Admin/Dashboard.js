@@ -118,15 +118,15 @@ var options = {
             </p>
           </div>
           <div className="dashboardSummaryBox2">
-            <Link to="/admin/products">
+            <Link to="/https://ecommerce6pack.netlify.app/admin/products">
               <p>Product</p>
               <p>{products && products.length}</p>
             </Link>
-            <Link to="/admin/orders">
+            <Link to="/https://ecommerce6pack.netlify.app/admin/orders">
               <p>Orders</p>
               <p>{orders && orders.length}</p>
             </Link>
-            <Link to="/admin/users">
+            <Link to="/https://ecommerce6pack.netlify.app/admin/users">
               <p>Users</p>
               <p>{users && users.length}</p>
             </Link>
