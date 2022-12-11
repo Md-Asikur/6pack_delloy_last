@@ -58,7 +58,12 @@ const MyOrders = () => {
       sortable: false,
       renderCell: (params) => {
         return (
-          <Link to={`/order/${params.getValue(params.id, "id")}`}>
+          <Link
+            to={`/https://ecommerce6pack.netlify.app/order/${params.getValue(
+              params.id,
+              "id"
+            )}`}
+          >
             <LaunchIcon />
           </Link>
         );

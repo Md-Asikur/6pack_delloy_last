@@ -8,9 +8,9 @@ const history=useHistory()
   const searchSubmitHandler = (e) => {
     e.preventDefault();
     if (keyword.trim()) {
-      history.push(`/products/${keyword}`);
+      history.push(`/https://ecommerce6pack.netlify.app/products/${keyword}`);
     } else {
-      history.push("/products");
+      history.push("/https://ecommerce6pack.netlify.app/products");
     }
   };
 

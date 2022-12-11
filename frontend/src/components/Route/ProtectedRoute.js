@@ -12,11 +12,11 @@ const ProtectedRoute = ({ isAdmin, component: Component, ...rest }) => {
           {...rest}
           render={(props) => {
             if (isAuthenticated === false) {
-              return <Redirect to="/login" />;
+              return <Redirect to="/https://ecommerce6pack.netlify.app/login" />;
             }
 
             if (isAdmin === true && user.role !== "admin") {
-              return <Redirect to="/login" />;
+              return <Redirect to="/https://ecommerce6pack.netlify.app/login" />;
             }
 
             return <Component {...props} />;
