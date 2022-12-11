@@ -57,7 +57,7 @@ const ProductReviews = ({ history }) => {
 
     if (isDeleted) {
       alert.success("Review Deleted Successfully");
-      history.push("https://asikurrahaman-ecom.onrender.com/admin/reviews");
+      history.push("https://ecommerce6pack.netlify.app/admin/reviews");
       dispatch({ type: DELETE_REVIEW_RESET });
     }
   }, [dispatch, alert, error, deleteError, history, isDeleted, productId]);

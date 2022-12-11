@@ -46,7 +46,7 @@ const ProductList = ({ history }) => {
 
     if (isDeleted) {
       alert.success("Product Deleted Successfully");
-      history.push("https://asikurrahaman-ecom.onrender.com/admin/dashboard");
+      history.push("https://ecommerce6pack.netlify.app/admin/dashboard");
       dispatch({ type: DELETE_PRODUCT_RESET });
     }
 
@@ -89,7 +89,7 @@ const ProductList = ({ history }) => {
         return (
           <Fragment>
             <Link
-              to={`https://asikurrahaman-ecom.onrender.com/admin/product/${params.getValue(
+              to={`https://ecommerce6pack.netlify.app/admin/product/${params.getValue(
                 params.id,
                 "id"
               )}`}
@@ -103,7 +103,7 @@ const ProductList = ({ history }) => {
               <DeleteIcon />
             </Button>
             <Link
-              to={`https://asikurrahaman-ecom.onrender.com/product/${params.getValue(
+              to={`https://ecommerce6pack.netlify.app/product/${params.getValue(
                 params.id,
                 "id"
               )}`}

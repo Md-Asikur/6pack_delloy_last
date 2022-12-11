@@ -7,7 +7,7 @@ const CreateButton = () => {
 
   return (
     <>
-      <Link to="/admin/product" className="createBtn">
+      <Link to="https://ecommerce6pack.netlify.app/admin/product" className="createBtn">
         <TreeItem nodeId="3" label="create a product" icon={<AddIcon />} />
       </Link>
     </>

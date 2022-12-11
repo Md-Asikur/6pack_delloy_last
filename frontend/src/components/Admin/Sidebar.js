@@ -18,7 +18,7 @@ const Sidebar = () => {
       <Link to="/">
         <img src={logo} alt="Ecommerce" />
       </Link>
-      <Link to="https://asikurrahaman-ecom.onrender.com/admin/dashboard">
+      <Link to="https://ecommerce6pack.netlify.app/admin/dashboard">
         <p>
           <DashboardIcon /> Dashboard
         </p>
@@ -29,28 +29,28 @@ const Sidebar = () => {
           defaultExpandIcon={<ImportExportIcon />}
         >
           <TreeItem nodeId="1" label="Products">
-            <Link to="https://asikurrahaman-ecom.onrender.com/admin/products">
+            <Link to="https://ecommerce6pack.netlify.app/admin/products">
               <TreeItem nodeId="2" label="All" icon={<PostAddIcon />} />
             </Link>
 
-            <Link to="https://asikurrahaman-ecom.onrender.com/admin/product">
+            <Link to="https://ecommerce6pack.netlify.app/admin/product">
               <TreeItem nodeId="3" label="Create" icon={<AddIcon />} />
             </Link>
           </TreeItem>
         </TreeView>
       </Link>
-      <Link to="https://asikurrahaman-ecom.onrender.com/admin/orders">
+      <Link to="https://ecommerce6pack.netlify.app/admin/orders">
         <p>
           <ListAltIcon />
           Orders
         </p>
       </Link>
-      <Link to="https://asikurrahaman-ecom.onrender.com/admin/users">
+      <Link to="https://ecommerce6pack.netlify.app/admin/users">
         <p>
           <PeopleIcon /> Users
         </p>
       </Link>
-      <Link to="https://asikurrahaman-ecom.onrender.com/admin/reviews">
+      <Link to="https://ecommerce6pack.netlify.app/admin/reviews">
         <p>
           <RateReviewIcon />
           Reviews
