@@ -129,7 +129,7 @@ function App() {
           />
           <ProtectedRoute
             exact
-            path="/https://ecommerce6pack.netlify.app/admin/orders"
+            path="/admin/orders"
             isAdmin={true}
             component={OrderList}
           />
@@ -142,7 +142,7 @@ function App() {
           />
           <ProtectedRoute
             exact
-            path="/https://ecommerce6pack.netlify.app/admin/users"
+            path="/admin/users"
             isAdmin={true}
             component={UsersList}
           />

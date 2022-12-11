@@ -45,7 +45,7 @@ const UsersList = ({ history }) => {
 
     if (isDeleted) {
       alert.success(message);
-      history.push("/https://ecommerce6pack.netlify.app/admin/users");
+      history.push("/admin/users");
       dispatch({ type: DELETE_USER_RESET });
     }
 
@@ -100,24 +100,14 @@ const UsersList = ({ history }) => {
       renderCell: (params) => {
         return (
           <Fragment>
-            <Link
-              to={`/https://ecommerce6pack.netlify.app/admin/user/${params.getValue(
-                params.id,
-                "id"
-              )}`}
-            >
+            <Link to={`/admin/user/${params.getValue(params.id, "id")}`}>
               <EditIcon />
             </Link>
 
             <Button onClick={() => deleteUserHandler(params.getValue(params.id, "id"))}>
               <DeleteIcon />
             </Button>
-            <Link
-              to={`/https://ecommerce6pack.netlify.app/account/${params.getValue(
-                params.id,
-                "id"
-              )}`}
-            >
+            <Link to={`/account/${params.getValue(params.id, "id")}`}>
               <LaunchIcon />
             </Link>
           </Fragment>
